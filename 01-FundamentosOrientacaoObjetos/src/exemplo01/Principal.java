@@ -1,4 +1,4 @@
-
+package exemplo01;
 //ultima aula 5.13
 
 public class Principal {
@@ -23,19 +23,26 @@ public class Principal {
 
         bmw.modelo = "BMW";
         bmw.cor = "azul";
-        bmw.anoFabricacao = 2004;
+        bmw.anoFabricacao = 2015;
+        bmw.precoCompra = 300_000;
         bmw.fabricante = "bmw";
         bmw.proprietario = joao;
 
         mercedes.modelo = "Mercedes Benz";
         mercedes.cor = "preto";
-        mercedes.anoFabricacao = 2025;
+        mercedes.anoFabricacao = 2013;
+        mercedes.precoCompra = 150_000;
         mercedes.fabricante = "mercedes";
         mercedes.proprietario = maria;
 
         //Imprimi os valores
         System.out.println("Carro01: " + bmw.modelo + " proprietario: " + bmw.proprietario.nome);
         System.out.println("Carro02: " + mercedes.modelo + " proprietario: " + mercedes.proprietario.nome);
+
+        System.out.println("==================================");
+
+        bmw.imprimirResumo();
+        mercedes.imprimirResumo();
 
     }
 }
